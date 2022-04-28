@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <title>PORTFOLIO | Seemant Kamlapuri</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            border-bottom: 1px solid white;
+        }
+
+        /* display background color black on navbar scroll */
+        .navbarScroll.navbarDark {
+            background-color: black;
+        }
+
+        .bgimage {
+            height: 100vh;
+            background: black;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* text css above hero image*/
+        .hero_title {
+            font-size: 4.5rem;
+        }
+
+        .hero_desc {
+            font-size: 2rem;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        #about {
+            background-color: black;
+            color: white;
+        }
+
+        .imageAboutPage {
+            width: 100%;
+
+            box-shadow: 0 2px 16px 2px;
+        }
+
+        .servicesText.card {
+            height: 280px;
+            cursor: pointer;
+            box-shadow: 0 0px 5px 0px;
+            background-color: black;
+        }
+
+        .servicesIcon {
+            font-size: 36px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .card-title {
+            text-align: center;
+        }
+
+        .card:hover .servicesIcon {
+            color: #008000;
+        }
+
+        .servicesText:hover {
+            border: 1px solid black;
+            background-color: white;
+            color: black;
+        }
+
+        .card {
+            color: white;
+            background-color: black;
+            box-shadow: 0 0px 5px 0px;
+            ;
+        }
+
+        .contact {
+
+
+            padding: 5rem;
+            gap: 1rem;
+
+
+        }
+
+        .container3 {
+
+            justify-items: center;
+        }
+
+        .container3>h1 {
+            text-align: center;
+        }
+
+        .media {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+        }
+
+        .media-body>a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .copyright {
+            text-decoration: none;
+            color: white;
+        }
+
+        .copyright:hover {
+            color: #008000;
+            transition: all 1s ease-out;
+        }
+
+        @media screen and (max-width:420px) {
+            .media {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+        <div class="container">
+            <a class="navbar-brand text-success" href="#"><img src="icons/LOGO@.png" class="w-25"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto text-center ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#home">Home</a>
+
+                    </li>
+                    <li class="nav-item " >
+                        <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#Experiences">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero Image-->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h2 class="hero_title">Hi, it's me Seemant Kamlapuri</h2>
+                    <p class="hero_desc">I am a Full stack Developer</p>
+                    <h3>From India</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center mb-2">About Me</h1>
+            <div class="row mt-3" style="gap: 3rem;">
+                <div class="col-lg-3">
+                    <img src="images/image0.jpeg" class="imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <h2>EverReady To Engage with new Technologies.</h2>
+                    <p class="mt-4">
+                        Well Skilled in Web Developement making many projects in HTML , CSS , JavaScript and C++ also.
+                        My main Intrest is make a object-oriented and user Design websites .
+                    </p>
+                    <p>
+                        I also working on a very popular JavaScript Library called "ReactJs" and making projects also.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Seemant Kamlapuri</li>
+                                <li>Email : seemantkamlapuri88@gmail.com</li>
+                                <li>Occupation: Web Developer</li>
+                                <li>Location: Lucknow , (U.P) - INDIA</li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3">
+                        <p>
+                            Apart from that I am pursuing B.Tech speciallization in "Information Technology" From "Babu
+                            Banarasi Das National Institute of Technology and Management " which is situated in Lucknow
+                            (U.P).
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- services section-->
+    <section id="skills">
+        <div class="container mt-5">
+            <h1 class="text-center ">SKills</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <!-- <i class="fas servicesIcon fa-clock"></i> -->
+                            <h4 class="card-title mt-3">Basic Website Development</h4>
+                            <p class="card-text mt-3">
+                                I Had well knowledge in basic Web Developement . I make many projects with the help of
+                                HTML , CSS & JavaScript.
+                            </p>
+                            <p>
+                                You wanna Look my Projects ? <br>
+                                Go To the Projects Section.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <!-- <i class='fas servicesIcon fa-layer-group'></i> -->
+                            <h4 class="card-title mt-3">C++ & OOPS</h4>
+                            <p class="card-text mt-3">
+                                C++ is a general purpose programming Language.<br>
+                                I had well knowledge about C++ and also I solving problems in HackerRank in C++ .<br>
+                                I am 4 Star coder at HackerRank with C++.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <!-- <i class='far servicesIcon fa-check-circle'></i> -->
+                            <h4 class="card-title mt-3">GIT & GITHUB</h4>
+                            <p class="card-text mt-3">
+                                Git is a version control tool (software) to track the changes in the source code. <br>
+                                GitHub is a web-based cloud service to host your source code(Git repositories).
+                                <br>
+                                I have also command on that ,and make repo on GitHub.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <!-- <i class='fas servicesIcon fa-search'></i> -->
+                            <h4 class="card-title mt-3">DSA</h4>
+                            <p class="card-text mt-3">
+                                DSA means "Data Stuructures and Algorithms" that helps to build Logic in Problem Solving
+                                approach.
+                                <br>
+                                I complete DSA course with Udemy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">ReactJS</h4>
+                            <p class="card-text mt-3">
+                                ReactJs is Library of JavaScript that make reusable components and single page
+                                application.
+                                <br>
+                                I working on ReactJs and make real world projects in my reputated Company where i doing
+                                internship as Frontend Web Developer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">Communication skills</h4>
+                            <p class="card-text mt-3">
+                                Communication skills are the abilities you use when giving and receiving different kinds
+                                of information.
+                                <br>
+                                Well know how to sharing my ideas or thoughts with others and good command in
+                                Communication Skill.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project section-->
+    <section id="projects">
+        <div class="container mt-5">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/Weather.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Weather App</h4>
+                            <p class="card-text">
+                                This is Weather app that tells the weather report of all over tha world .
+                                <br>
+                                I fecthed the data from API -(weatherApi.org) .
+                                <br>
+                                Technology are used in this are HTML ,CSS , JavaScript
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/Seemant9118/Weather-App" class="btn btn-success">Check
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 ">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/Digital.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Digital Clock</h4>
+                            <p class="card-text">
+                                Make a Digital Clock that tells time of real world of some countries. <br>
+                                I make this Project with the Help of HTML , CSS and JavaScript.
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/Seemant9118/International-Clock"
+                                    class="btn btn-success">Check Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/Analog.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Analog Clock</h4>
+                            <p class="card-text">
+                                A basic analog Clock that tells the Real world current time and full working accurate.<br>
+                                I build this project with the help of HTML , CSS and JavaScript.
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Check Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/Flexbox.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Flexbox Image Gallery</h4>
+                            <p class="card-text">
+                                Flexbox Image Gallery it is basic CSS and some JavaScript to perform Transition smoothly to show images.
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Check Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/Hotel.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Basic Hotel Management Sys.</h4>
+                            <p class="card-text">
+                                That Project is my First Project . and i make this project in C++ . and it is very basic project.
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Check Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/Canvas.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Canvas Painting</h4>
+                            <p class="card-text">
+                                That Projects Canvas where we paint and make fun of different colors in rgb. <br>
+                                Make this project by HTML , CSS and JavaScript.
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Check Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--Experiences-->
+    <div id="Experiences" class="container3 mt-5 my-2 p-4">
+        <h1>My Experiences...</h1>
+        <br>
+        <div class="media ">
+            <a href="https://skillark.org/"><img src="Logo.png" class="mr-3" alt="..."></a>
+            <div class="media-body">
+                <h5 class="mt-0">Intern as Frontend Web Developer </h5> <a href="https://skillark.org/"
+                    class="text-white">at Skillark Pvt.
+                    Ltd.</a>
+
+                <p>
+                    <ul>
+                        <li>
+                            Duration : 3 Months Internship
+                        </li>
+                        <li>A well reputated Company , always helping me to Learn new things and make Reliable to understand easily.</li>
+                        <li>
+                            In this company i part of the making real world projects in ReactJs. 
+                        </li>
+                        
+                    </ul>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div id='contact' class="contact mt-5">
+        <h1>Do You Have any Amazing Project In your mind ?</h1>
+        <h2>Let's Get Started.</h2>
+        <a href="BlogsForm.html"><button type="button" class="btn btn-success mt-4 ">Reach Me</button></a>
+
+    </div>
+
+    <div class="container2">
+
+        <footer class="text-center text-lg-start" style="background-color: black; border-top:1px solid white ;">
+            <div class="container d-flex justify-content-center py-5">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
+                    style="background-color:black; border: 1px solid white;">
+
+                    <!--facebook-->
+                    <a href="https://www.facebook.com/seemant.kamlapuri/" class="text-white"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg></a>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
+                    style="background-color: black;border: 1px solid white;">
+
+                    <!--Insta-->
+                    <a href="https://www.instagram.com/seemant_20_11/?hl=en" class="text-white"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg></a>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
+                    style="background-color: black;border: 1px solid white;">
+                    <!--Linkedin-->
+
+                    <a href="https://www.linkedin.com/in/seemant-kamlapuri-b682331b5/" class="text-white"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg></a>
+
+                </button>
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"
+                    style="background-color: black;border: 1px solid white;">
+
+                    <!--Github-->
+
+                    <a href="https://github.com/Seemant9118" class="text-white"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg></a>
+                </button>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a id="copyright" class="copyright" href="#home">Seemant Kamlapuri</a>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script>
+        // add class navbarDark on navbar scroll
+        const header = document.querySelector('.navbar');
+
+        window.onscroll = function () {
+            var top = window.scrollY;
+            if (top >= 100) {
+                header.classList.add('navbarDark');
+            }
+            else {
+                header.classList.remove('navbarDark');
+            }
+        }
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
