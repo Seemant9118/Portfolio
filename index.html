@@ -141,32 +141,34 @@
         }
 
         @media screen and (max-width:420px) {
-            
+
             .media {
                 display: flex;
                 flex-direction: column;
 
             }
         }
+
         @media screen and (max-width:400px) {
-           #logo {
-            width:15rem;
-           }
+            #logo {
+                width: 15rem;
+            }
         }
-        
     </style>
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
-       
+
         <div class="container">
-           <a id="logo" href="#home"><img src="/images/LOGO.png" class="w-25"></a>
+            <a id="logo" href="#home" style="text-decoration: none;">
+                <h2 style="color: white;">PORTFOLIO</h2>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span id="toggle-icon" class="navbar-toggler-icon" ></span>
+                <span id="toggle-icon" class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul id="menu" class="navbar-nav ms-auto text-center ">
@@ -174,7 +176,7 @@
                         <a class="nav-link text-white" href="#home">Home</a>
 
                     </li>
-                    <li class="nav-item " >
+                    <li class="nav-item ">
                         <a class="nav-link text-white" href="#about">About</a>
                     </li>
                     <li class="nav-item">
@@ -399,7 +401,8 @@
                         <div class="card-body">
                             <h4 class="card-title">Analog Clock</h4>
                             <p class="card-text">
-                                A basic analog Clock that tells the Real world current time and full working accurate.<br>
+                                A basic analog Clock that tells the Real world current time and full working
+                                accurate.<br>
                                 I build this project with the help of HTML , CSS and JavaScript.
                             </p>
                             <div class="text-center">
@@ -417,7 +420,8 @@
                         <div class="card-body">
                             <h4 class="card-title">Flexbox Image Gallery</h4>
                             <p class="card-text">
-                                Flexbox Image Gallery it is basic CSS and some JavaScript to perform Transition smoothly to show images.
+                                Flexbox Image Gallery it is basic CSS and some JavaScript to perform Transition smoothly
+                                to show images.
                             </p>
                             <div class="text-center">
                                 <a href="#" class="btn btn-success">Check Now</a>
@@ -432,7 +436,8 @@
                         <div class="card-body">
                             <h4 class="card-title">Basic Hotel Management Sys.</h4>
                             <p class="card-text">
-                                That Project is my First Project . and i make this project in C++ . and it is very basic project.
+                                That Project is my First Project . and i make this project in C++ . and it is very basic
+                                project.
                             </p>
                             <div class="text-center">
                                 <a href="#" class="btn btn-success">Check Now</a>
@@ -471,16 +476,17 @@
                     Ltd.</a>
 
                 <p>
-                    <ul>
-                        <li>
-                            Duration : 3 Months Internship
-                        </li>
-                        <li>A well reputated Company , always helping me to Learn new things and make Reliable to understand easily.</li>
-                        <li>
-                            In this company i part of the making real world projects in ReactJs. 
-                        </li>
-                        
-                    </ul>
+                <ul>
+                    <li>
+                        Duration : 3 Months Internship
+                    </li>
+                    <li>A well reputated Company , always helping me to Learn new things and make Reliable to understand
+                        easily.</li>
+                    <li>
+                        In this company i part of the making real world projects in ReactJs.
+                    </li>
+
+                </ul>
                 </p>
 
             </div>
@@ -569,13 +575,7 @@
             }
         }
 
-        const val = document.querySelectorAll('#menu li a')
-
-       for(var i = 0 ; i<val.length ; i++) {
-           val[i].addEventListener('click' , function(){
-               header.classList.remove('nav-item')
-           })
-       }
+        
     </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
