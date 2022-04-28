@@ -141,24 +141,32 @@
         }
 
         @media screen and (max-width:420px) {
+            
             .media {
                 display: flex;
                 flex-direction: column;
 
             }
         }
+        @media screen and (max-width:400px) {
+           #logo {
+            width:15rem;
+           }
+        }
+        
     </style>
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+       
         <div class="container">
-            <a class="navbar-brand text-success" href="#"><img src="icons/LOGO@.png" class="w-25"></a>
+           <a id="logo" href="#home"><img src="/icons/LOGO@.png" class="w-25"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span id="toggle-icon" class="navbar-toggler-icon" ></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto text-center ">
